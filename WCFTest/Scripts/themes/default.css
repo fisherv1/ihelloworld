@@ -1,0 +1,58 @@
+﻿.theme-default .nivoSlider {
+    background: url("loading.gif") no-repeat scroll 50% 50% #FFFFFF;
+    position: relative;
+}
+.theme-default .nivoSlider img {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.theme-default .nivoSlider a {
+    border: 0 none;
+    display: block;
+}
+.theme-default .nivo-controlNav {
+    bottom: -42px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+}
+.theme-default .nivo-controlNav a {
+    background: url("bullets.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    float: left;
+    height: 22px;
+    margin-right: 3px;
+    text-indent: -9999px;
+    width: 22px;
+}
+.theme-default .nivo-controlNav a.active {
+    background-position: 0 -22px;
+}
+.theme-default .nivo-directionNav a {
+    background: url("arrows.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    height: 30px;
+    text-indent: -9999px;
+    width: 30px;
+}
+.theme-default a.nivo-nextNav {
+    background-position: -30px 0;
+    right: 15px;
+}
+.theme-default a.nivo-prevNav {
+    left: 15px;
+}
+.theme-default .nivo-caption {
+    font-family: Helvetica,Arial,sans-serif;
+}
+.theme-default .nivo-caption a {
+    border-bottom: 1px dotted #FFFFFF;
+    color: #FFFFFF;
+}
+.theme-default .nivo-caption a:hover {
+    color: #FFFFFF;
+}
