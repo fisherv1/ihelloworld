@@ -1,0 +1,391 @@
+﻿
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+ol, ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    background: url("../images/bg.jpg") repeat scroll 0 0 transparent;
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+}
+.clear {
+    clear: both;
+}
+a:link, a:visited {
+    color: #494949;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #7E0700;
+    text-decoration: none;
+}
+#header {
+    margin: 0 0 20px;
+}
+#logo {
+    float: left;
+}
+ul.nav {
+    float: right;
+    height: 90px;
+    list-style: none outside none;
+    text-indent: -9999px;
+    width: 540px;
+}
+ul.nav li {
+    float: left;
+    margin-left: 45px;
+    position: relative;
+}
+ul.nav a {
+    display: block;
+    height: 90px;
+    width: 90px;
+}
+.hoverHome, .hoverWork, .hoverAbout, .hoverContact {
+    cursor: pointer;
+    height: 90px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 90px;
+}
+.home a {
+    background: url("../images/nav.png") no-repeat scroll 0 0 transparent;
+}
+.work a {
+    background: url("../images/nav.png") no-repeat scroll -90px 0 transparent;
+}
+.about a {
+    background: url("../images/nav.png") no-repeat scroll -180px 0 transparent;
+}
+.contact a {
+    background: url("../images/nav.png") no-repeat scroll -270px 0 transparent;
+}
+.hoverHome, .home {
+    background: url("../images/nav.png") no-repeat scroll 0 -90px transparent;
+}
+.hoverWork, .work {
+    background: url("../images/nav.png") no-repeat scroll -90px -90px transparent;
+}
+.hoverAbout, .about {
+    background: url("../images/nav.png") no-repeat scroll -180px -90px transparent;
+}
+.hoverContact, .contact {
+    background: url("../images/nav.png") no-repeat scroll -270px -90px transparent;
+}
+.topbar {
+    padding: 30px 0 0;
+}
+#main-nav {
+    display: none;
+}
+.sticky #main-nav {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 1px 1px 2px #CCCCCC;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.sticky #main-nav ul {
+    background: url("../images/float_logo_left.gif") no-repeat scroll left center transparent;
+    margin: 0 auto;
+    width: 980px;
+}
+.sticky #main-nav li a {
+    color: #666666;
+    display: block;
+    float: right;
+    font-size: 14px;
+    line-height: 35px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+.sticky #main-nav li.homeB a {
+    background: url("../images/float_nav_home.gif") no-repeat scroll left center transparent;
+    padding-left: 20px;
+}
+.sticky #main-nav li.workB a {
+    background: url("../images/float_nav_work.gif") no-repeat scroll left center transparent;
+    padding-left: 20px;
+}
+.sticky #main-nav li.aboutB a {
+    background: url("../images/float_nav_about.gif") no-repeat scroll left center transparent;
+    padding-left: 20px;
+}
+.sticky #main-nav li.contactB a {
+    background: url("../images/float_nav_contact.gif") no-repeat scroll left center transparent;
+    margin-right: 0;
+    padding-left: 20px;
+}
+.sticky #main-nav li a:hover {
+    background: none repeat scroll 0 0 #9C2129;
+    color: #FFFFFF;
+}
+.sticky #main-nav li:first-child {
+    border-left: 0 none;
+}
+.top {
+    bottom: 0;
+    position: fixed;
+    right: 15px;
+}
+.top:before {
+    content: "";
+    left: 14px;
+    position: absolute;
+    top: 11px;
+}
+.top:hover {
+    color: #EEEEEE;
+}
+.top:hover:before {
+    border-bottom-color: #EEEEEE;
+}
+.opacity .top {
+    -moz-transition: opacity 700ms linear 0s;
+    opacity: 1;
+}
+.opacity .top.hidden {
+    opacity: 0;
+}
+.no-opacity .top.hidden {
+    display: none;
+}
+.brand {
+    padding-top: 30px;
+}
+.brand a {
+    background: url("../images/brand.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 93px;
+    text-indent: -9999px;
+}
+.brand a:hover {
+    background: url("../images/brand_dwn.png") no-repeat scroll left top transparent;
+}
+#banner {
+    margin: 40px 0 0;
+}
+.imgTitle {
+    margin-bottom: 20px;
+}
+#workPage {
+    padding-top: 40px;
+}
+#workPage ul.category {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+#workPage ul.category li {
+    float: left;
+    margin-right: 20px;
+}
+#workPage ul.category li a {
+    display: block;
+    line-height: 180%;
+    padding: 0 10px;
+}
+#workPage ul.category li a:hover, #workPage ul.category li.current a {
+    background: none repeat scroll 0 0 #7E0700;
+    color: #FFFFFF;
+}
+.workBox {
+    background-color: #FFFFFF;
+    float: left;
+    height: 290px;
+    margin-bottom: 46px;
+    margin-right: 46px;
+    width: 296px;
+}
+.last {
+    margin-right: 0;
+}
+.workBox .topBox {
+    position: relative;
+}
+.workBox .topBox a {
+    display: block;
+}
+.workBox .topBox a .viewMore {
+    background: url("../images/viewmore.png") no-repeat scroll center center transparent;
+    cursor: pointer;
+    height: 214px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 296px;
+}
+.workBox .bottomBox {
+    padding: 10px;
+}
+.workBox .bottomBox h3 {
+    color: #494949;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.workBox .bottomBox p {
+    color: #848282;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 11px;
+}
+#aboutPage {
+    color: #848282;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 11px;
+    padding-top: 40px;
+}
+.aboutContent .aboutTitle {
+    background: url("../images/about_title.png") no-repeat scroll left bottom transparent;
+    height: 20px;
+    margin-bottom: 20px;
+    text-indent: -9999px;
+}
+.aboutContent p {
+    margin-bottom: 15px;
+}
+.aboutContent .description {
+    float: left;
+    width: 468px;
+}
+.aboutContent .skill {
+    float: right;
+    width: 468px;
+}
+#contactPage {
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+.contactContent .titleLeft {
+    float: left;
+    width: 70%;
+}
+.contactContent .titleRight {
+    float: right;
+    width: 30%;
+}
+.contactContent .titleRight .contactIcon {
+    background: url("../images/contactIcon_bg.png") no-repeat scroll right bottom transparent;
+    height: 62px;
+    padding-left: 100px;
+}
+.contactContent .titleRight .contactIcon li {
+    float: left;
+    margin: 0 8px;
+    padding: 20px 0 0;
+}
+.contactContent .titleRight .contactIcon a:hover img {
+    opacity: 0.7;
+}
+.contactContent .contactTitle {
+    /*background: url("../images/contact_title.png") no-repeat scroll left bottom transparent; */
+    height: 20px;
+    margin-bottom: 20px;
+   /* text-indent: -9999px;*/
+   font-size:22px;
+}
+.contactContent .emailTitle {
+    background: url("../images/email_title.png") no-repeat scroll left bottom transparent;
+    height: 16px;
+    margin-bottom: 10px;
+    text-indent: -9999px;
+}
+.contactContent .contactLeft {
+    float: left;
+    width: 468px;
+}
+.contactContent .contactRight {
+    float: right;
+    width: 468px;
+}
+.contactContent p {
+    color: #848282;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+.contactContent .emailContent a {
+    background: url("../images/email_bg.png") repeat-x scroll left bottom transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+.contactContent .emailContent a:hover {
+    background: url("../images/email_bg_hover.png") repeat-x scroll left bottom transparent;
+}
+.contactContent label {
+    font-size: 16px;
+}
+.contactContent .inputText {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 14px;
+    height: 30px;
+    line-height: 200%;
+    margin: 10px 0 20px;
+    padding: 2px 10px;
+    width: 446px;
+}
+.contactContent .inputTextarea {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 14px;
+    height: 200px;
+    margin: 10px 0 20px;
+    width: 463px;
+}
+.contactContent .submitBtn {
+    background: url("../images/send_btn.png") no-repeat scroll left bottom transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 37px;
+    outline: medium none;
+    width: 118px;
+}
+.contactContent small {
+    color: #999999;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+}
+#footer {
+    background-color: #FFFFFF;
+    color: #999999;
+    height: 120px;
+}
+#footer .subMenu {
+    padding: 10px 0 30px;
+}
+#footer .subMenu li {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    line-height: 1;
+    margin-right: 10px;
+    padding-right: 10px;
+}

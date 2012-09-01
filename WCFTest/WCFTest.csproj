@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAF66819-493A-4EF0-8195-A3B697CFE79C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCFTest</RootNamespace>
+    <AssemblyName>WCFTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\main.css" />
+    <Content Include="CSS\nivo-slider.css" />
+    <Content Include="CSS\prettyPhoto.css" />
+    <Content Include="CSS\tipTip.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\about_title.png" />
+    <Content Include="images\about_txt.png" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\banner4.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\brand.png" />
+    <Content Include="images\brand_dwn.png" />
+    <Content Include="images\btt_btn.png" />
+    <Content Include="images\contactIcon_bg.png" />
+    <Content Include="images\contact_title.png" />
+    <Content Include="images\contact_txt.png" />
+    <Content Include="images\email_bg.png" />
+    <Content Include="images\email_bg_hover.png" />
+    <Content Include="images\email_title.png" />
+    <Content Include="images\facebook_icon.png" />
+    <Content Include="images\float_logo_left.gif" />
+    <Content Include="images\float_nav_about.gif" />
+    <Content Include="images\float_nav_contact.gif" />
+    <Content Include="images\float_nav_home.gif" />
+    <Content Include="images\float_nav_work.gif" />
+    <Content Include="images\fullscreen\work_10_1.jpg" />
+    <Content Include="images\fullscreen\work_11_1.jpg" />
+    <Content Include="images\fullscreen\work_12_1.jpg" />
+    <Content Include="images\fullscreen\work_12_2.jpg" />
+    <Content Include="images\fullscreen\work_12_3.jpg" />
+    <Content Include="images\fullscreen\work_12_4.jpg" />
+    <Content Include="images\fullscreen\work_12_5.jpg" />
+    <Content Include="images\fullscreen\work_12_6.jpg" />
+    <Content Include="images\linkin_icon.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\nav.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="images\prettyPhoto\default\loader.gif" />
+    <Content Include="images\prettyPhoto\default\sprite.png" />
+    <Content Include="images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="images\recommand.png" />
+    <Content Include="images\send_btn.png" />
+    <Content Include="images\skill.png" />
+    <Content Include="images\thumbnails\work_1.jpg" />
+    <Content Include="images\thumbnails\work_10.jpg" />
+    <Content Include="images\thumbnails\work_11.jpg" />
+    <Content Include="images\thumbnails\work_12.jpg" />
+    <Content Include="images\thumbnails\work_2.jpg" />
+    <Content Include="images\thumbnails\work_3.jpg" />
+    <Content Include="images\thumbnails\work_4.jpg" />
+    <Content Include="images\thumbnails\work_5.jpg" />
+    <Content Include="images\thumbnails\work_6.jpg" />
+    <Content Include="images\thumbnails\work_7.jpg" />
+    <Content Include="images\thumbnails\work_9.jpg" />
+    <Content Include="images\twitter_icon.png" />
+    <Content Include="images\viewmore.png" />
+    <Content Include="images\work_txt.png" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.anchor.js" />
+    <Content Include="Scripts\jquery.nivo.slider.pack.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.tipTip.minified.js" />
+    <Content Include="Scripts\JScript.js" />
+    <Content Include="Scripts\nivo-slider.css" />
+    <Content Include="Scripts\themes\bar\arrows.png" />
+    <Content Include="Scripts\themes\bar\bar.css" />
+    <Content Include="Scripts\themes\bar\bullets.png" />
+    <Content Include="Scripts\themes\bar\loading.gif" />
+    <Content Include="Scripts\themes\dark\arrows.png" />
+    <Content Include="Scripts\themes\dark\bullets.png" />
+    <Content Include="Scripts\themes\dark\dark.css" />
+    <Content Include="Scripts\themes\dark\loading.gif" />
+    <Content Include="Scripts\themes\default.css" />
+    <Content Include="Scripts\themes\default\arrows.png" />
+    <Content Include="Scripts\themes\default\bullets.png" />
+    <Content Include="Scripts\themes\default\default.css" />
+    <Content Include="Scripts\themes\default\loading.gif" />
+    <Content Include="Scripts\themes\light\arrows.png" />
+    <Content Include="Scripts\themes\light\bullets.png" />
+    <Content Include="Scripts\themes\light\light.css" />
+    <Content Include="Scripts\themes\light\loading.gif" />
+    <Content Include="Scripts\waypoints.min.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
+    <Content Include="WCFService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IWCFService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WCFService.svc.cs">
+      <DependentUpon>WCFService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\themes\.DS_Store" />
+    <None Include="Scripts\themes\dark\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8725</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
